@@ -7,12 +7,16 @@ from selenium.common.exceptions import TimeoutException
 import time
 
 MIN  = 0
+# Sign out of your account and click sign in, the copy the url to the login_url below.
 login_url = "https://www.bestbuy.ca/identity/en-ca/signin?tid=111111111"
+# Enter the item you are looking to purchase.
 item_url = "https://www.bestbuy.ca/en-ca/product/1111111"
 cart_url = "https://www.bestbuy.ca/en-ca/basket"
 
-UID = str('email')
-UPASSWORD = str('password')
+# Enter your email, password, and CVV.
+# ! Attention: make sure that your shipping address and credit card payment info are saved in your account.
+UID = str('email@email.com')
+UPASSWORD = str('PaAsWoRd')
 CVV = int(1111)
 
 class BestBuyPurchase():
@@ -47,6 +51,7 @@ class BestBuyPurchase():
                 addcart_btn.click()
                 break
             time.sleep(8)
+            print('Refresh!')
             self.driver.refresh()
         time.sleep(2)
 

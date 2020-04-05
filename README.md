@@ -7,10 +7,10 @@ Set up env:
 4. Find your python path using `which python` and move the `chromedriver.exe` to the same folder.
 
 Before you run:
-1. Make sure that you have your shipping address, and payment method (credit card) saved on your Best Buy profile.
+1. Make sure that your shipping address, and payment method (credit card) is saved on your Best Buy profile.
 2. Set your login_url, item_url, uid, upassword, and cvv in the bestbuy.py script.
 
-The script is last updated on 2020-04-04. This method relies heavily on the xpath and class and is subject to change upon site updates.
+The script is last updated on 2020-04-04. This method relies heavily on xpath and class tags that are is subject to change upon site updates.
 
 TODO:
 - bug: sometimes fail to refresh after a while
